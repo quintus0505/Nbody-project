@@ -1,2 +1,11 @@
 程序设计2报告N体问题，代码来自 https://introcs.cs.princeton.edu/python/34nbody
-项目详细信息见上一级readme
+项目概况见上一级readme
+
+相关文件说明：
+3b,4b为存放实验数据文件夹
+runs为运行代码时生成相关实验数据的文件夹
+2body.txt,3body.txt,4body.txt,为存放N体相关信息，如N的值，每个物体质量，初始位置等
+universe.py为包含主函数的代码文件，若要redo实验，请运行该文件
+stdarray.py与vector,py为包含相关向量函数的文件
+stddraw.py为配置环境文件
+body.py为包含计算每一个单位时间后物体状态函数的文件
