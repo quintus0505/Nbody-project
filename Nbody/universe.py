@@ -78,12 +78,12 @@ class Universe:
 
 def main():
 
-    filename ="/home/quintus0505/programming/Nbody/4body.txt" #sys.argv[1]
+    filename ="/home/quintus0505/programming/Nbody/3body.txt" #sys.argv[1]
     #fp=open(filename,"r")
     dt = 10000 #float(sys.argv[2])
     universe = Universe(filename)
     #while True:
-    for epoch in range(12000):
+    for epoch in range(15000):
         universe.increaseTime(dt, epoch)
 
         stddraw.clear()
