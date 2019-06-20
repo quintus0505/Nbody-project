@@ -10,4 +10,6 @@ stdarray.py与vector.py为包含相关向量函数的文件
 stddraw.py为配置环境文件
 body.py为包含计算每一个单位时间后物体状态函数的文件
 
+函数功能一些在注释中y
+
 若要运行相关代码，universe.py 中 main的filename地址请自行更改
