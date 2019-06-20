@@ -23,11 +23,15 @@ class Body:
     # f for the number of seconds specified by float dt.
 
     def move(self, f, dt,epoch,i):
+
+    #更新速度和位移
         a = f.scale(1 / self._mass)
 
         self._v = self._v + (a.scale(dt))
         self._r = self._r + self._v.scale(dt)
         print(self._v)
+
+    #以下是用tensorboardX绘制折线图
         total1=0
         total2 = 0
         total0 = 0
@@ -68,6 +72,7 @@ class Body:
     # Return the force between Body objects self and other.
 
     def forceFrom(self, other, epoch,i,j):
+        #计算受合力
         G = 6.67e-11
         delta = other._r - self._r
         dist = abs(delta)

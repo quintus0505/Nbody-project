@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------
 
 import sys
-import mujoco_py   #现在看来用不上
+
 import stdarray
 import stddraw
 from body import Body
@@ -17,7 +17,7 @@ import math
 # -----------------------------------------------------------------------
 writer = SummaryWriter()
 class Universe:
-
+    #环境设置与初始信息读取
     # Construct a new Universe object by reading a description
     # from the file whose name is filename.
 
@@ -78,7 +78,7 @@ class Universe:
 
 def main():
 
-    filename ="/home/quintus0505/programming/Nbody/3body.txt" #sys.argv[1]
+    filename ="/home/quintus0505/programming/Nbody/3body.txt" #链接需要更改
     #fp=open(filename,"r")
     dt = 10000 #float(sys.argv[2])
     universe = Universe(filename)
